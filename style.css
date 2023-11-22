@@ -271,20 +271,24 @@
   font-weight: 600;
   line-height: 49.14px; /* 130.795% */
 }
-.reliableSection .mainSliderBox {
+.reliableSection img {
+  padding-top: 15px;
+  width: 190px;
   height: 100px;
-}
-.reliableSection .mainSliderBox a {
-  color: red;
-}
-.reliableSection .slideMain {
-  height: 30vh;
-}
-.reliableSection .slideMain img {
-  width: 140px;
-  height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.reliableSection .slideImgs {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+  gap: 50px;
+}
+.reliableSection .prev {
+  margin-right: 50%;
+}
+.reliableSection .next {
+  margin-left: 50%;
 }
 
 .footer {
