@@ -6,17 +6,21 @@
 
 .mainSection::before {
   content: "";
-  position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
+  position: absolute;
+
   left: 0px;
+  position: absolute;
   background: rgba(0, 0, 0, 0.5);
 }
 
 //Main Section Start
 .mainSection {
-  height: 100vh;
+  position: relative;
+  height: auto;
+  margin-bottom: 20px;
   max-width: 100%;
   width: 100%;
   background-image: url("./assets/mainBackground.png");
@@ -85,6 +89,53 @@
       a {
         text-decoration: none;
         color: #fff;
+      }
+    }
+  }
+
+  .mainOptions {
+    width: 100%;
+    position: relative;
+    height: 230px;
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: 35% 29.5% 35%;
+    justify-content: space-between;
+
+    .boxes {
+      background: #808080;
+      cursor: pointer;
+      &:hover {
+        background: #918e8e;
+        transition: all 0.5s ease;
+      }
+      .boxItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+        div {
+          display: grid;
+          gap: 10px;
+          p {
+            color: #fff;
+            font-family: Inter;
+            font-size: 17.188px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px; /* 168.727% */
+          }
+        }
+      }
+
+      .boxNumber {
+        color: #fff;
+        font-family: Inter;
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 600;
+        opacity: 0.2;
       }
     }
   }
@@ -245,7 +296,8 @@
     width: 100%;
     height: 30vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     h2 {
       color: #000;
       font-family: Inter;
@@ -253,6 +305,22 @@
       font-style: normal;
       font-weight: 600;
       line-height: 49.14px; /* 130.795% */
+    }
+  }
+
+  .mainSliderBox {
+    height: 100px;
+
+    a {
+      color: red;
+    }
+  }
+  .slideMain {
+    height: 30vh;
+    img {
+      width: 140px;
+      height: 50px;
+      object-fit: contain;
     }
   }
 }
